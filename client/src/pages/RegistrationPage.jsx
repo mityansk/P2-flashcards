@@ -6,16 +6,21 @@ function RegistrationPage({ loginProps }) {
 
   useEffect(() => {
     console.log('интересный ник', { username, password });
-
   }, [username, password]);
 
-   ;
-  const registrate = async()=>{
+  const registrate = async (event) => {
     event.preventDefault();
-    await User.createUser({ username, password });
-    console.log('интересный ник', { username, password });
-
-  }
+    if (username && password) {
+      try {
+        await User.createUser({ username, password }); // Отправка данных на сервер
+        console.log('Данные зарегистрированы:', { username, password });
+      } catch (error) {
+        console.error('Ошибка регистрации:', error);
+      }
+    } else {
+      console.error('Заполни все!');
+    }
+  };
 
   return (
     <div className="container">

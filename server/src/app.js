@@ -11,4 +11,7 @@ serverConfig(app)
 // Маршрутизация сервера
 app.use('/', indexRouter);
 
+// app.use(express.json());
+
+
 app.listen(PORT, () => console.log(`Server started at ${PORT} port`));
