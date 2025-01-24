@@ -6,6 +6,7 @@ import RegistrationPage from '../pages/RegistrationPage'
 import CardPage from '../pages/CardPage/CardPage'
 
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -28,18 +29,7 @@ const router = createBrowserRouter([
         path: '/registration',
         element: <RegistrationPage />
       },
-      {
-        path: '/login',
-        element: <LoginPage />
-      },
-      {
-        path: '/finish',
-        element: <FinishPage />
-      },
-      {
-        path: '/profile',
-        element: <ProfilePage />
-      },
+     
     ]
   }
 ])
