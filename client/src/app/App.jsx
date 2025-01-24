@@ -7,17 +7,17 @@ const router = createBrowserRouter([
     path: '/',
     // element: <Nav />,
     children: [
-      // {
-      //   path: '/',
-      //   element: <HomePage />
-      // },
-      // {
-      //   path: '/deck',
-      //   element: <DeckPage />
-      // },
       {
-        path: '/card',
-        element: <CardPage id={deck_id} />
+        path: '/',
+        element: <HomePage />
+      },
+      {
+        path: '/deck',
+        element: <DeckPage />
+      },
+      {
+        path: '/card/:cardId',
+        element: <CardPage />
       },
       // {
       //   path: '/registration',

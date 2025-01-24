@@ -1,26 +1,26 @@
 import { useEffect, useState } from "react";
 import ContentCard from "../../shared/ContentCard";
 import Card from '../../entities/Card/CardApi'
-function CardPage(deck_id) {
+import { useParams } from "react-router-dom";
+function CardPage() {
 
+const {cardId} = useParams()
 // принять массив с вопросами по выбранной теме
 const [cards , setCards] = useState(null)
-const [currentCard, setCard] = useState(null)
+
 
 
 useEffect(async ()=>{ 
-   
-    setCards(car)
-},[deck_id])
+    getCards()
+},[cardId])
 
 const getCards = async () => {
-    const cardsNew = await Card.getAllCardThem()
+    const cardsNew = await Card.getAllCardThem(cardId)
     setCards(cardsNew)
 }
 
     return (
-    
-        <ContentCard type="Card" data={card}  />
+        <ContentCard type="Card" data={cards}  />
      
     );
 }
