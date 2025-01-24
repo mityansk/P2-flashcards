@@ -10,7 +10,7 @@ import CardPage from '../pages/CardPage/CardPage'
 const router = createBrowserRouter([
   {
     path: '/',
-    // element: <Nav />,
+    element: <Nav />,
     children: [
 
       // {
