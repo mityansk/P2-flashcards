@@ -9,9 +9,10 @@ function RegistrationPage({ loginProps }) {
 
   }, [username, password]);
 
-  const userPass = { username, password };
+   ;
   const registrate = async()=>{
-    await User.createUser(userPass);
+    event.preventDefault();
+    await User.createUser({ username, password });
     console.log('интересный ник', { username, password });
 
   }

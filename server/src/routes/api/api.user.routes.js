@@ -7,7 +7,7 @@ router.route('/')
     .post(async (req,res)=>{
             try {
                 const {login, pass, score} = req.body
-                const userNew = await User.Create({login, pass ,score});
+                const userNew = await User.create({login, pass ,score});
                 res.status(201).json(formatResponse(200, 'Create User Done', userNew))
             } catch (error) {
                 res.status(404).json(formatResponse(400, 'Error', null, error.message))
