@@ -3,45 +3,43 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Nav from '../widgets/nav/nav'
 import HomePage from '../pages/Home'
 import RegistrationPage from '../pages/RegistrationPage'
-
-
 import CardPage from '../pages/CardPage/CardPage'
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    // element: <Nav />,
+    element: <Nav />,
     children: [
 
-      // {
-      //   path: '/',
-      //   element: <HomePage />
-      // },
-      // {
-      //   path: '/deck',
-      //   element: <DeckPage />
-      // },
-      // {
-      //   path: '/card',
-      //   element: <CardPage />
-      // },
+      {
+        path: '/',
+        element: <HomePage />
+      },
+      {
+        path: '/deck',
+        element: <DeckPage />
+      },
+      {
+        path: '/card',
+        element: <CardPage />
+      },
       {
         path: '/registration',
         element: <RegistrationPage />
       },
-      // {
-      //   path: '/login',
-      //   element: <LoginPage />
-      // },
-      // {
-      //   path: '/finish',
-      //   element: <FinishPage />
-      // },
-      // {
-      //   path: '/profile',
-      //   element: <ProfilePage />
-      // },
+      {
+        path: '/login',
+        element: <LoginPage />
+      },
+      {
+        path: '/finish',
+        element: <FinishPage />
+      },
+      {
+        path: '/profile',
+        element: <ProfilePage />
+      },
     ]
   }
 ])
