@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import User from '../entities/User';
-function RegistrationPage({ loginProps }) {
+function RegistrationPage() {
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
 
@@ -12,7 +12,7 @@ function RegistrationPage({ loginProps }) {
     event.preventDefault();
     if (username && password) {
       try {
-        await User.createUser({ username, password }); // Отправка данных на сервер
+        await User.createUser({ username, password }); 
         console.log('Данные зарегистрированы:', { username, password });
       } catch (error) {
         console.error('Ошибка регистрации:', error);
@@ -51,7 +51,7 @@ function RegistrationPage({ loginProps }) {
           />
         </div>
         <button type="submit" className="btn btn-primary">
-          Войти
+          Регистрация
         </button>
       </form>
     </div>
