@@ -1,11 +1,9 @@
 import { useState } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-<<<<<<< HEAD
+
 import Nav from '../widgets/nav/nav'
 import HomePage from '../pages/Home'
 import RegistrationPage from '../pages/RegistrationPage'
-
-=======
 import CardPage from '../pages/CardPage/CardPage'
 >>>>>>> dd75e5f80c3d01da413b1e1bfb0e20655db80d7e
 
@@ -54,7 +52,7 @@ const router = createBrowserRouter([
       // {
       //   path: '/login',
       //   element: <AuthorizationPage />
->>>>>>> dd75e5f80c3d01da413b1e1bfb0e20655db80d7e
+
       // },
       // {
       //   path: '/finish',
