@@ -1,7 +1,6 @@
 const express = require('express');
 const fs = require('fs');const path = require('path');
 const morgan = require('morgan');
-// const removeXPowered = require('../middleware/removeXPowered');
 const cors = require('cors');
 
 // Конфигурация стрима для логов
