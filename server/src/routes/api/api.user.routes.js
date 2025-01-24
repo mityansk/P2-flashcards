@@ -6,6 +6,8 @@ const formatResponse = require('../../utils/formatResponse');
 router.route('/')
     .post(async (req,res)=>{
             try {
+              console.log(req.body);
+              
                 const {login, pass, score} = req.body
                 const userNew = await User.create({login, pass ,score});
                 res.status(201).json(formatResponse(200, 'Create User Done', userNew))

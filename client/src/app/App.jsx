@@ -5,11 +5,15 @@ import HomePage from '../pages/Home'
 import RegistrationPage from '../pages/RegistrationPage'
 
 
+import CardPage from '../pages/CardPage/CardPage'
+
+
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Nav />,
+    // element: <Nav />,
     children: [
+
       // {
       //   path: '/',
       //   element: <HomePage />
