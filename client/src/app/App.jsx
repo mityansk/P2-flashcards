@@ -5,14 +5,14 @@ import Nav from '../widgets/nav/nav'
 import HomePage from '../pages/Home'
 import RegistrationPage from '../pages/RegistrationPage'
 import CardPage from '../pages/CardPage/CardPage'
->>>>>>> dd75e5f80c3d01da413b1e1bfb0e20655db80d7e
+
 
 const router = createBrowserRouter([
   {
     path: '/',
     // element: <Nav />,
     children: [
-<<<<<<< HEAD
+
       // {
       //   path: '/',
       //   element: <HomePage />
@@ -32,26 +32,7 @@ const router = createBrowserRouter([
       // {
       //   path: '/login',
       //   element: <LoginPage />
-=======
-      {
-        path: '/',
-        element: <HomePage />
-      },
-      {
-        path: '/deck',
-        element: <DeckPage />
-      },
-      {
-        path: '/card/:cardId',
-        element: <CardPage />
-      },
-      // {
-      //   path: '/registration',
-      //   element: <RegistrationPage />
-      // },
-      // {
-      //   path: '/login',
-      //   element: <AuthorizationPage />
+
 
       // },
       // {
